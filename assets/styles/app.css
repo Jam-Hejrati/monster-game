@@ -1,0 +1,90 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #333333;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0.5rem;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 2rem;
+  color: #ff9100;
+  border: 1px solid #ff0000;
+  margin-bottom: 2rem;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #ff0000;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #ff0000;
+  transition: all 0.2s ease-out;
+}
+
+button {
+  font: inherit;
+  background: #ff9100;
+  border: 1px solid #ff9100;
+  color: #333333;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 50px;
+  font-size: 1.5em;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #ffde00;
+  border-color: #ffde00;
+}
+
+#health-levels,
+#controls {
+  margin: 10rem auto;
+  width: 33rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bonus-life {
+  font-weight: bold;
+  color: #ffffff;
+  background: #ff9100;
+  border: 1px solid #ff9100;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
